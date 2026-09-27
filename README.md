@@ -11,7 +11,7 @@ End-to-end UI tests for [SauceDemo](https://www.saucedemo.com/), written with Pl
 ## Setup (clean environment)
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/alpokark/vala-saucedemo-playwright.git
 cd vala-saucedemo-playwright
 npm ci
 npx playwright install --with-deps
