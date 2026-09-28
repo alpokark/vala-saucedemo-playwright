@@ -18,6 +18,7 @@ test('cart badge and cart contents stay in sync when adding and removing items',
 
   await test.step('add the bike light from its product page', async () => {
     await inventoryPage.openProduct(products.bikeLight);
+    // The URL changes before the product page renders; wait for an element only it has.
     await expect(productPage.backToProductsButton).toBeVisible();
     await expect(productPage.name).toHaveText(products.bikeLight);
     await productPage.addToCart();
